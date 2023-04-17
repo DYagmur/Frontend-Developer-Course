@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+/*
+#1 Id selector is the strongest selector
+We can use by starting with hastag/pound (#)
+
+#2 Pseudo selector is the second strongest selector. We can use with colon after the css selector (tag, class, attribute, and so on). Such as :hover, :first-child, :last-child, :nth-child()
+
+#3 Attribute selector is stronger than class selector but weaker than pseudo selector. We can use by typing square brackets ([]). Inside of the square brackets we need to type the tag attribute and the value.
+
+#4 Class selector is the second weakest selector. We can use by starting with dot (.)
+
+#5 Tag selector is the weakest selector
+Tag name (a/p/table/section)
+
+*/
+
+header,
+nav,
+main,
+footer {
+    width: 90%;
+}
+
+header {
+    background-image: url("/img/strawberry.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px black;
+}
+
+h1 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+nav {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    background-image: linear-gradient(to bottom, red 50%,firebrick 50%);
+    /* background-image: linear-gradient(to right, yellow 10%, red 90%); */
+}
+
+nav > ul {
+    width: 60%;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    width: 70%;
+    border-right: 1px solid white;
+}
+
+nav a {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    font-weight: 600;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to bottom, limegreen 50%, forestgreen 50%);
+}
+
+main {
+    display: flex;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.5%;
+}
+
+.left {
+    padding: 1%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    background-color: gainsboro;
+}
+
+.left > article {
+    padding: 5%;
+    background-color: olive;
+    color: whitesmoke;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.left > article:last-child {
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.left h3 {
+    text-transform: capitalize;
+}
+
+.left li {
+    display: flex;
+}
+
+.left a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.left a:hover {
+    text-decoration: underline;
+}
+
+.right {
+   background-color: whitesmoke;
+   row-gap: 3vh;
+   padding: 2%;
+   text-align: justify;
+
+}
+.right li {
+    
+}
+
+.right article aside {
+    background-color: pink;
+    row-gap: 3vh;
+}

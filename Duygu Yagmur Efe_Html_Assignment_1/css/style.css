@@ -1,0 +1,133 @@
+/* Sanitize ^^ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: whitesmoke;
+  color:black;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Side */
+header {
+  background-color: beige;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header figcaption {
+  font-size: 16px;
+}
+
+header img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+/* Navigation side */
+nav {
+  background-color: rgb(86, 85, 66);
+  padding: 10px;
+  text-align: center;
+}
+
+nav li {
+  display:inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: ghostwhite;
+  border: 1px solid whitesmoke;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: .6s;
+}
+
+nav a:hover {
+  background-color:blanchedalmond;
+  color: grey;
+}
+
+/* Main content side */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.left,
+.middle,
+.right {
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.left h2,
+.middle h2,
+.right h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.left p,
+.middle p,
+.right p {
+  margin-bottom: 10px;
+  padding: flex;
+
+}
+
+.left a,
+.middle a,
+.right a {
+  color: black;
+  text-decoration:underline;
+}
+
+/* Footer side */
+footer {
+  background-color:  rgb(86, 85, 66);
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: whitesmoke;
+  border-bottom: 1px solid ghostwhite;
+}
+
+footer a:hover {
+  color: whitesmoke;
+  background-color: grey;
+  border-bottom: 1px solid black;
+}

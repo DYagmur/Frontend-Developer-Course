@@ -1,0 +1,162 @@
+/* Styling for the body element */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the header element */
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+  header h1 {
+        color: ghostwhite;
+  }
+  
+  /* Styling for the video element inside the header */
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  /* Styling for the navigation menu */
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Styling for the hover effect on navigation menu */
+  nav ul li:hover {
+    background-color: #ddd;
+  }
+  
+  /* Styling for the main content section */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  main section {
+    width: 40%;
+  }
+  
+  /* Styling for the figure element */
+  figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .top nav a {
+    list-style-type: none;
+  }
+  
+  /* Styling for the time element */
+  time {
+    font-style: italic;
+    color: #999;
+  }
+  
+  /* Styling for the aside elements */
+  aside {
+    width: 25%;
+    margin-left: 5%;
+  }
+  
+  /* Styling for the top websites section */
+  section:last-child {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  section:last-child ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section:last-child li {
+    margin: 10px 0;
+  }
+  
+  section:last-child a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  section:last-child a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for the contact form */
+  form {
+    margin: 20px 10%;
+  }
+  
+  form h2 {
+    margin-top: 0;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #555;
+  }
+  

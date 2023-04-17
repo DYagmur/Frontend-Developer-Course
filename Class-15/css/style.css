@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap&#39');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+nav,
+header section,
+figcaption,
+main,
+form,
+form aside {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 200px) {
+    /*start writing here*/
+
+    nav {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+    nav > aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5vw;
+        font-size: 28px;
+        color: dimgray;
+    }
+    nav h2 {
+        width: 20%;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    nav ul {
+        border-top: 2px solid dimgray;
+        border-bottom: 2px solid dimgray;
+        height: 5vh;
+    }
+
+    nav i {
+        font-size: 50px;
+    }
+    nav li { 
+        display: none;
+    }
+
+    header > section {
+        position: absolute;
+        row-gap: 3vh;
+        align-items: center;
+        background-color: rgba(25, 25, 25, .3);
+        width: 100%;
+        height: 100%;
+    }
+    header h1 {
+        font-weight: 400;
+    }
+
+    header {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header > section a {
+        padding: 2%;
+        background-color: whitesmoke;
+        color: dimgray;
+        border: 3px solid whitesmoke;
+        width: 30%;   /*read more alt altaydı. width i yükselttim yan yana oldu*/
+        text-decoration: none;
+        
+    }
+    header p {
+        color: whitesmoke;
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%; 
+       
+    }
+    main {
+        row-gap: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+    footer a {
+        width: 5vh;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        color: dimgray;
+    }
+    .row {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+    }
+    .activities {
+        row-gap: 3vh;
+    }
+    .activities,
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .activities > article {
+        display: flex;
+        background-image: url(/img/pic-07.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 20vh;
+   }
+   .content {
+    row-gap: 4vh;
+   }
+   .layer {
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(25, 25, 25,.8);
+   }
+   .activities figure {
+    padding: 2%;
+    width: 90%;
+    padding-top: 3%;
+    padding-left: %3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+
+}
+    .activities img {
+    width: 50%;
+}
+    .activities figcaption {
+    width: 70%;
+    row-gap: 1vh;
+}
+    .activities h3 {
+    color: deepskyblue;
+    font-weight: 300;
+}
+    .activities p {
+    font-size: 14px;
+    font-style: italic;
+}
+    .company {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+
+}
+    .company figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3vh;
+    }
+    .company img {
+        width: 100%;
+    }
+    .company figcaption {
+        width: 70%;
+        align-items: flex-end;
+    }
+    .company figcaption > h3,
+    .company figcaption > p {
+        width: 100%;
+        color: dimgray;
+    } 
+    .company h4 {
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .company figcaption p {
+        font-size: 14px;
+    }
+    .company a {
+        padding: 5%;
+        width:40%;
+        border: 2px solid darkgray;
+    }
+    .company > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+        border: 1px solid darkgray;
+        padding-bottom: 5vh; /*alt kenarı yukarı doğru itiyor.*/
+    }
+    .company aside {
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+        color: dimgray;
+        border-bottom: 1px solid darkgray;
+    }
+    .company article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        width: 70%;
+    }
+    .contact input,
+    .contact textarea
+    .contact [type="submit"] {
+            width: 25%;
+            transition: .6s;
+        }
+    }
+    .contact h2 {
+        text-align: right;
+        padding-right: 3%;
+
+    }
+    .contact aside {
+        padding: 5%;
+        row-gap: 5vh;
+    }
+}
+
+/*tablet*/
+@media (min-width:600px) {
+     /*start writing here*/
+}
+
+/*desktop*/
+@media (min-width: 1000px){
+     /*start writing here*/
+
+}

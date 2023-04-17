@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    row-gap: 2%;
+
+}
+
+header {
+   column-gap: 5vh;
+    display: flex;
+    
+}
+
+header > section {
+    width: 70%;
+    background-image: url("/img/orange.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    border: 10 px solid white;
+}
+main {
+    display: flex;
+}
+main > section { 
+    display: flex;
+    flex-direction: column;
+}
+
+figure { 
+         width: 30%;
+
+}
+
+figcaption { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    line-height: 1.5;
+
+}
+
+figcaption > strong {
+    color: darkorange;
+}
+
+figcaption > article {
+    width: 50%;
+}
+
+h1 {
+    color: midnightblue;
+
+}
+h1 > span {
+    color: darkorange;
+}
+
+nav > ul {
+    display: flex; 
+    width: 50%;
+}
+
+nav  li {
+    display: flex;
+    width: 100%;
+    
+}
+
+nav a {
+    width: 100;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    padding: 5%;
+    transition: .6s;
+}
+main {
+    display: flex;
+    column-gap: 4vw;
+}
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a:hover {
+    background-color: midnightblue;
+}
+
+h2 {
+    color: midnightblue;
+    letter-spacing: 4px;
+}
+
+nav,
+footer {
+    background-color: darkorange;
+}
+
+.left {
+    row-gap: ;
+}
+.left > nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    line-height: 1.5;
+}
+
+.left  ul {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 1px;
+
+}
+
+.left li {
+    background-color: darkorange;
+}
+
+.left a {
+
+    padding: 3%;
+    text-align: left;
+}

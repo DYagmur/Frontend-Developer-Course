@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+html {
+
+}
+/*Mobile version */
+@media (min-width: 200px) {
+     nav > h2,
+     nav > ul {
+       display: none; /*bu direk 3 adet alt alta çizgi şeklinde saklıyor navigation menüsünü. */
+    }
+    nav {
+        padding: 5%;
+    }
+    header {
+        height: 80vh;
+        background-image: url(/img/bg-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    
+    }
+    header > article {
+        padding: 2%;
+        height: 96%;
+        width: 96%;
+        background-color:rgb(10, 10, 10, .7);
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vh;
+    }
+    
+    header  section {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        align-items: center;
+        border: 1px solid white;
+        justify-content: center;
+        color: whitesmoke;
+    
+    }
+    header h1 {
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        width: 60%;
+    }
+    header p {
+        text-align: center;
+        width: 50%;
+    }
+
+    header p > a {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+    
+    header a > span {
+        color: lawngreen;
+ 
+    }
+    header aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header aside > a {
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5%;
+        font-weight: 600;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+    }
+    header aside > a:last-child {
+        background-color: dodgerblue;
+        border-color: dodgerblue;
+        width: 95%;
+    }
+    details {
+        text-align: right;
+        position: relative;
+    }
+
+    details > ul {
+        position: absolute;
+        width: 100%;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        background-color: rgba(10, 10, 10, .7);
+
+    }
+    details li {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid whitesmoke;
+    }
+    details a {
+        padding: 2%;
+        width: 100%;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 20px;
+        font-style: italic;
+        letter-spacing: 1px;
+        
+
+    }
+    summary {
+        border: 1px- solid whitesmoke;
+        font-size: 24px;
+        padding: 2%;
+        color: white;
+
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 7vh;
+    }
+    main > section {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3vh;
+    }
+    main > a {
+        padding: 1%;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        background-color: dodgerblue;
+        font-weight: 600;
+    }
+    footer {
+        padding: 2%;
+        background-color: gainsboro;
+        border-top: 3px solid darkgray;
+        text-align: center;
+        color:grey;
+    }
+
+    /*features*/
+    .features {
+        background-color: ghostwhite;
+    }
+    .features > article {
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+    }
+    .features a {
+        width: 15vh;
+        height: 15vh;
+        border: 1px solid dodgerblue;
+        border-radius: 50%;
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features p {
+        width: 80%;
+        text-align: center;
+    }
+    /*gallery*/
+
+    .gallery {
+        row-gap: 7vh;
+
+    }
+    .contact > article,
+    .gallery > article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 2vh;
+        width: 70%;
+        color: dimgray;
+    }
+    .contact > article > strong,
+    .gallery > article > strong {
+        width: 50%;
+        height: 1vh;
+        background-color: gainsboro;
+    }
+    .contact > article > p, 
+    .gallery > article > p {
+        line-height: 1.5;
+    }
+    .gallery > article a {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+    .gallery > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+    }
+    .gallery figure {
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        background-color: gainsboro;
+    }
+    .gallery img {
+        width: 100%;
+    }
+
+    .gallery figcaption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+ 
+    }
+    .gallery figcaption > p {
+        text-align: justify;
+        color: gray;
+    }
+    /*SIGNUP*/
+    .signup {
+        background-color: skyblue;
+        color: whitesmoke;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .signup > form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        width: 95%;
+    }
+    .signup input {
+        padding: 3%;
+        border: 0px none transparent;
+        background-color: lightblue;
+    }
+    .signup input::placeholder {
+        color: whitesmoke;
+    }
+    .signup [type="submit"] {
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        font-weight: 600;
+        width: 40%;
+    }
+    .contact from {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .contact input,
+    .contact textarea {
+        padding: 2%;
+        width: 96%;
+        border: 1px solid lightgray;
+    }
+    textarea {
+        height: 20vh;
+        resize:none;
+    }
+    .contact ::placeholder {
+        color: lightgray;
+    }
+    .contact [type="submit"] {
+        background-color: dodgerblue;
+        color: whitesmoke;
+        border: 2px solid dodgerblue;
+        text-align: center;
+        width: 100%;
+
+    }
+}
+
+/*tablet version*/
+@media (min-width: 1000px) {
+    /*header*/
+    header {
+        height: 50vh;
+    }
+    header > article {
+        row-gap: 2vh;
+        height: unset;
+    }
+    header aside {
+        width: 40%;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 3vw;
+
+    }
+    header aside > a {
+        padding: 2%;
+        transition: .6s;
+    }
+    header aside > a:last-child {
+        width: 30%;
+    }
+    header aside > a:first-child:hover {
+        background-color: dodgerblue;
+        border-color: dodgerblue;
+    }
+
+    header aside > a:first-child:hover {
+        background-color: transparent;
+        border-color: whitesmoke;
+    }
+    /*navigation*/
+    nav {
+        display: flex;
+        justify-content: right;
+    }
+    nav > ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    nav a {
+        color: whitesmoke;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+    details {
+        display: none;
+    }
+    /*features*/
+    .features {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 3vw;
+
+    }
+    .features > article {
+        width: 40%;
+    }
+
+    .features a {
+        width: 10vh;
+        height: 10vh;
+        transition: .6s;
+    }
+    .features a:hover {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /*gallery*/
+    .gallery > section {
+        flex-direction: row;   /*resimleri yan yana yaptık. kolon halinde koyduk. */
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 4vw;
+    }
+    .gallery figure {
+        width: 35%;
+    }
+    /*signup*/
+    .signup input {
+        padding: 1%;
+    }
+    .signup [type="submit"] {
+
+        width: 25%;
+        transition: .6s;
+    }
+    .signup [type="submit"]:hover {
+        background-color: whitesmoke;
+        color: skyblue;
+        border-color: skyblue;
+        cursor: pointer;
+    }
+    /*contact*/
+    .contact form {
+        justify-content: space-between;
+    }
+    .contact input {
+        width: 40%;
+    }
+    .contact [name="subject"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        height: 50vh;
+    }
+
+    /*features*/
+    .features {
+        padding-top: 5vh;  /*header ve features i ayırmak için kullandık. */
+    }
+    /*nav*/
+    nav > a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: .6s;
+    }
+
+}
+
+
+

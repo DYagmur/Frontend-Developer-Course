@@ -1,0 +1,192 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(196, 212, 212);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+   
+  header {
+    width: 100%;
+  }
+  
+  header video {
+    object-fit: cover ;
+    object-position: center;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid lightseagreen;
+    padding: 20px;
+    background-color: rgba(124, 121, 121, 0.8);
+  }
+
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul > li {
+    margin: 0 20px;
+  }
+  
+  
+  nav li {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+
+  header nav a:hover {
+    color: blanchedalmond;
+    transition: .7s;
+  }
+  
+ 
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: aliceblue;
+  }
+  
+  .left {
+    border-right: 1px solid dimgray;
+    flex: 1%;
+    margin-right: 50px;
+    margin-top: 5vh;
+    margin-left: 20px;
+  }
+  
+  .middle {
+    flex: 1%;
+    margin-top: 5vh;
+    border-right: 1px solid dimgray;
+  }
+  
+  .middle figcaption {
+    margin-right:1vw;
+  }
+  .right {
+    flex: 1%;
+    margin-left: 50px;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    
+  }
+  
+  .left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .left p {
+    margin-bottom: 20px;
+    margin-right:1vw;
+  }
+  
+  .left article {
+    margin-top: 50px;
+  }
+  
+  .left article h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .left article ul {
+    margin-bottom: 20px;
+    list-style: none;
+    
+  }
+  
+  .middle h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .middle figure {
+    margin-bottom: 50px;
+  }
+  
+  .middle img {
+        width: 15vw;
+        height: 17vh;
+        border: 5px solid black;
+  }
+  
+  .middle figcaption {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .right {
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+  .right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .right aside {
+    margin-bottom: 50px;
+  }
+  
+  .right aside h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .right ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    
+  }
+  
+  .right ul li a:hover {
+    color: blanchedalmond;
+  }
+  
+ 
+  blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  cite {
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer span {
+    font-size: 14px;
+    margin-top: 10px;
+  }

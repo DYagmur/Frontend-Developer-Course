@@ -1,0 +1,203 @@
+/* default side */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* header side */
+header {
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+header figure {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+
+}
+
+header > form {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+section > figure {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+
+header img {
+  height: 30px;
+ 
+}
+figcaption {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+/* nav side*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: darkorange;
+  
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* main side */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.middle img {
+  width: 100px;
+}
+
+.top {
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+  background-color: darkcyan;
+}
+
+.top h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.top a {
+  display: block;
+  margin-top: 10px;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.middle article {
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background-color: lightgray;
+}
+.middle img {
+  max-width: 100%;
+   height: auto;
+}
+
+.middle h4 {
+  margin: 0;
+}
+
+.middle p {
+  margin: 10px 0;
+}
+
+.middle a {
+  display: block;
+  margin-top: 10px;
+  border-right-width: 1px;
+  border:10vh;
+}
+
+.last {
+  flex: 1 0 300px;
+  background-color: darkcyan;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.last h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.last p {
+  text-align:center;
+  margin: 10px 0;
+  color: white;
+}
+
+.last article {
+  width: 50%;
+
+}
+.last section {
+  width: 50%;
+}
+
+.last img {
+  width: 10vh;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+
+.last a:hover {
+  color: black;
+}
+
+/* Footer side */
+footer {
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer span {
+  color: black;
+}

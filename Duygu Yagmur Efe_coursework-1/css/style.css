@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+main{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: whitesmoke;
+    width: 98%;
+    border-radius: 1vw;
+    display: flex;
+    column-gap: 2vw;
+}
+.content{
+    display: flex;
+    column-gap: 2vw;
+    margin: 1%;
+}
+h2{
+    color: orange;
+    font-size: 30px;
+}
+.left{
+    padding: 1%;
+    background: dimgray;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    width: 70vw;
+}
+.left > article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+.left p{
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.left span{
+    color: orange;
+}
+cite{
+    color: white;
+    font-style: normal;
+    text-align: right;
+}
+.left img{
+    width: 1vw;
+}
+.left > aside{
+    background-color: gray;
+    padding: 1%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 22vw
+}
+header{
+    margin-top: 2vh;
+}
+header > figure{
+    display: flex;
+    column-gap: 1vw;
+    align-items: center;
+}
+header img{
+    width: 5vw;
+    height: 5vh;
+}
+header figcaption{
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+.right ul{
+    padding-left: 2vw;
+    list-style-type: square;
+    color: orange;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.right a{
+    color: gray;
+    text-decoration: none;
+}
+nav{
+    padding-top: 2vh;
+}
+nav > ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+nav li{
+    border-bottom: 2px solid orange;    
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.right article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding-top: 1vh;
+}
+[type="search"]{
+    border: 2px solid orange;
+}
+[type="submit"]{
+    border: 0px none transparent;
+}
+footer{
+    margin-bottom: 2vh;
+}
+footer > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+footer li{
+    color: gray;
+    display: flex;
+    justify-content: right;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+footer a{
+    color: dimgray;
+}
+.right span{
+    color: dimgray;
+}
+hr{
+   margin-top: 5vh;
+}

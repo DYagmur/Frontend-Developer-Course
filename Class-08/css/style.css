@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --defaultBrown  : rgb(136,88,53);
+    --defaultOrange : rgb(241,115,39);
+}
+
+/* NAVIGATION */
+nav {
+    border-top: 2px solid var(--defaultOrange);
+    background-color: var(--defaultBrown);
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    width: 70%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+nav li {
+    display: flex;
+    width: 100%;
+    border-right: 1px solid whitesmoke;
+    padding-left: 3px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    transition: .6s;
+}
+
+nav a:hover {
+    background-color: var(--defaultOrange);
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    column-gap: 3vw;
+}
+
+main > section {
+    padding-top: 3vh;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--defaultBrown);
+    letter-spacing: 3px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--defaultOrange);
+    border-top: 5px solid var(--defaultBrown);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer span {
+    color: black;
+}
+
+img {
+    width: 5%;
+}
+
+.left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.left > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    list-style-type: square;
+    padding-left: 5%;
+    color: var(--defaultBrown);
+}
+
+.left a {
+    color: var(--defaultBrown);
+    text-decoration: none;
+}
+
+.middle {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40%;
+    border-left: 1px dashed var(--defaultBrown);
+    border-right: 1px dashed var(--defaultBrown);
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 2vh;
+}
+
+.bottom > form {
+    width: 25%;
+}
+
+fieldset {
+    padding: 5%;
+}
+
+[type="submit"] {
+    background-color: var(--defaultOrange);
+    border: 0px none;
+    border-radius: 2px;
+    padding: 1%;
+}
+
+
+.middle > article:first-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh ;
+}
+
+.middle > article:last-child {
+    display: flex;
+}

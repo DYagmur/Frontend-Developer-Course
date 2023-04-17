@@ -1,0 +1,214 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    column-gap: 1vh;
+}
+footer {
+    background-color: darkslategray;
+    row-gap: 50vh;
+    width: 79%;
+
+}
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+}
+
+h1,h2 {
+    color: forestgreen;
+}   
+/*color yazının rengini değiştirir.*/
+h3,
+h1 > span {
+    color: dimgray;
+}
+/*color yazının rengini değiştirir. h1 in içinde ki bi kelimenin rengini değiştirir*/
+
+header {
+    background-image: url(/img/header11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+header > section {
+    width: 98%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(220, 220, 220, .6);
+}
+nav {
+    border-top: 3px solid forestgreen;
+}  /*üst tarafta çizgi oluşturuyor. */
+
+nav > ul {
+    height: 25vh;
+    padding-left: 10%;
+    padding-right: 1%;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav li {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px dotted whitesmoke;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    padding: 1%;
+    transition: .6s;
+}
+nav a:hover {
+    background-color: forestgreen;
+}
+
+
+footer {
+    color: whitesmoke;
+    background-color: darkslategray;
+    text-align: center;
+    padding: 1%;
+}
+
+.left {
+    padding-top: 5vh;
+    width: 60%;
+}
+
+.left,
+.left > section,
+.left article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+.left article {
+    width: 95%;
+    row-gap: 2vh;
+    line-height:1.5;
+    text-align:justify;
+
+}
+
+.left article:nth-child(2) > h2 {
+    background-image: url(/img/cs.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+}
+.left article:nth-child(2) > h2 {
+    background-image: url(/img/icon1.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+}
+.left a {
+    text-decoration: none;
+    color: firebrick;
+    font-weight: 600;
+}
+
+.right {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.right {
+    height: 25vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+.right > a {
+    padding-bottom: 2%;
+    padding-left: 5%;
+    color: forestgreen;
+} /*başlıkta ki resim ile aynı hizaya getirdik a tagıni.*/
+
+
+.right > section {
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    background-color: ghostwhite;
+    row-gap: 5vh;
+}
+
+/*section ve nav biribirine çok yakın olduğu için row gap kullanamıyoruz. bu yuzden padding top kullanıyoruz.*/
+
+.right > section ul {
+padding-left: 15%;
+display: flex;
+flex-direction: column;
+row-gap: 1vh;
+}
+.right > section a {
+    color: black;
+}
+
+.right article {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+.right img {
+    width: 100%;
+    height: 10vh;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+figcaption {
+    text-align: justify;
+    line-height: 1.5;
+}
+.right aside {
+    padding: 5%;
+    width: 90%;
+    background-color: olivedrab;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+.righ h4,
+.right aside li {
+    color:whitesmoke;
+
+}
+.right aside > ul {
+    padding: 0%;
+    list-style-type: none;
+    line-height: 1.5;
+}
