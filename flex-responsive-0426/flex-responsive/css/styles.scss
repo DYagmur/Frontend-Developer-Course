@@ -1,0 +1,293 @@
+/* build color palette */
+:root {
+    --tangerine: #EC523F;
+    --aqua: #1ABC9C;
+    --amber: #E67E22;
+    --skyblue: #3498DB;
+    --mintgreen: #2ECC71;
+    --darkgrey: #444444;
+    --lightgrey: #E7E7E7;
+}
+
+/* apply google fonts and font styling */
+body, input, textarea {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--darkgrey);
+}
+
+/* make page sections visible */
+header, section, footer {
+    border: 2px dotted blue;
+    padding: 20px;
+}
+
+/* button style */
+.button {
+    background-color: var(--tangerine);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* skills gallery styles */
+#service-1 {
+    background-color: var(--aqua);
+}
+
+#service-2 {
+    background-color: var(--amber);
+}
+
+#service-3 {
+    background-color: var(--skyblue);
+}
+
+#service-4 {
+    background-color: var(--mintgreen);
+}
+
+/* nav menu styles */
+nav {
+    border: 1px dotted red;
+    display: flex;
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
+}
+
+nav li {
+    display: inline;
+}
+
+#social-media {
+    background-color: var(--darkgrey);
+}
+
+#socmed-menu-list a {
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#main-menu-list {
+    margin-left: auto;
+}
+
+#main-menu-list a {
+    color: var(--darkgrey);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 35px 10px 35px 10px;
+}
+
+#main-menu-list a:hover,
+#main-menu-list a.active {
+    color: var(--tangerine);
+    border-top: 4px solid var(--tangerine);
+}
+
+/* wordmark style */
+#flex-wordmark {
+    color: var(--tangerine);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* hero styles */
+#hero {
+    text-align: center;
+    background-color: var(--darkgrey);
+}
+
+#hero h1, #hero h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#hero h1 {
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+#hero h3 {
+    font-weight: 400;
+}
+
+/* all other headings */
+h1 {
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+h3 {
+    font-weight: 400;
+}
+h1, h3 {
+    text-transform: uppercase;
+}
+
+section h1, section h3,
+#design-skills-subheading {
+    text-align: center;
+} 
+
+/* services styles */
+.service {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    height: 300px;
+}
+
+/* team styles */
+.member > img {
+    border-radius: 50%;
+}
+
+/* design styles */
+#design-skills-heading, #design-skills-subheading {
+    font-style: italic;
+}
+
+#skill-areas {
+    display: grid;
+    gap: 10px;
+}
+
+.skill {
+    height: fit-content;
+    background-color: var(--lightgrey);
+}
+
+.progress {
+    background-color: var(--tangerine);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#progress-1 {
+    width: 90%;
+}
+
+#progress-2 {
+    width: 80%;
+}
+
+#progress-3 {
+    width: 70%;
+}
+
+#progress-4 {
+    width: 80%;
+}
+
+/* contact styles */
+#contact form {
+    display: grid;
+    row-gap: 15px;
+}
+#contact form input,
+#contact form textarea {
+    border: 1px solid var(--lightgrey);
+    padding: 10px;
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+/* footer styles */
+footer {
+    display: flex;
+}
+
+#back-to-top {
+    margin-left: auto;
+}
+
+/* media queries */
+/* mobile */
+@media (min-width: 300px){
+
+}
+/* tablet */
+@media (min-width: 700px){
+    .gallery {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+
+    #skills-container,
+    #contact-details {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+/* desktop */
+@media (min-width: 1000px){
+    .gallery {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    #skills-container,
+    #contact-details {
+        display: grid;
+        grid-template-columns: 66% 33%;
+    }
+}
+
+/* To do's / issues 
+    26 April 2023
+
+    HEADER:
+      social media icons
+      - make circular
+      - hide for mobile viewport
+      - force color to be dark grey
+
+      main nav
+      - logo image missing
+      - responsive main menu + hamburger icon
+
+      hero
+      - background image missing
+      - spacing under button
+
+    SERVICES
+    - vertical-align of icons
+    - ??? box height
+
+    PORTFOLIO
+    - box hover actions
+
+    TEAM
+    - member hover actions
+    - spacing between skill progress bars (rethink grid)
+    - vertical-align of paragraphs + progress bars
+
+    CONTACT
+    - Google map
+    - vertical-align of paragraphs + message form
+
+    FOOTER
+    - back-to-top button
+      - hide for mobile viewport
+
+    OVERALL
+    - optimize SCSS
+*/
+
